@@ -26,29 +26,37 @@ This is the list of the nodes currently available. There are more comming soon, 
  * **Output:** Material Output.
  
  | Type |  Inputs | Outputs |
- | ------- |  :------: | ------- |
  | **Input** | | |
- | Number | - | Factor |
- | Color | - | Color |
- | Coordinates | - | Generated, Normal, UV, Object, Camera |
+ | :------: | ------- | ------- |
+ | Number | - | Factor: value |
+ | Color | - | Color: vec3 |
+ | Coordinates | - | Generated: vec3<br/>Normal: vec3<br/>UV: vec3<br/>Object: vec3<br/>Camera: vec3 |
+ | :------ | ------- | ------- |
  | **Texture** | | |
- | Gradient | Vector | Color, Factor |
- | Noise | Vector | Color, Factor |
- | Dicom | - | Density |
- | Transfer Function | - | Color |
+ | :------: | ------- | ------- |
+ | Gradient | Vector: vec3 | Color: vec4 <br/>Factor |
+ | Noise | Vector: vec3 | Color: vec4 <br/>Factor |
+ | Dicom | - | Density: value |
+ | Transfer Function | - | Color: vec4 |
+ | :------ | ------- | ------- |
  | **Operator** | | |
+ | :------: | ------- | ------- |
  | Math | Value A, Value B | Result (=) |
- | MixRGB | Factor, Color A, Color B | Color, Factor |
- | ColorRamp | Value | Color, Factor |
- | Translate | Vector | Vector |
- | Scale | Vector | Vector |
- | Rotate | Vector | Vector |
- | Separate | Color (RGBA) | Factor (R), Factor (G), Factor (B), Factor (A) |
- | Combine | Factor (R), Factor (G), Factor (B), Factor (A) | Color (RGBA) |
+ | MixRGB | Factor <br/>Color A, Color B | Color: vec4, Factor: value |
+ | ColorRamp | Value | Color: vec4, Factor: value |
+ | Translate | Vector: vec3 | Vector: vec3 |
+ | Scale | Vector: vec3 | Vector: vec3 |
+ | Rotate | Vector: vec3 | Vector: vec3 |
+ | Separate | RGBA: vec4 | R: red value<br/>G: green value<br/>B: blue value<br/>A: aplha value |
+ | Combine | R: red value<br/>G: green value<br/>B: blue value<br/>A: aplha value | RGBA: vec4 |
+ | :------ | ------- | ------- |
  | **Shader** | | |
- | Volume | Color, Density | Volume |
+ | :------: | ------- | ------- |
+ | Volume | Color: vec4<br/>Density:value | Volume: algorithm that calculates the final color |
+ | :------ | ------- | ------- |
  | **Output** | | |
- | Material Output | Frag Color | - |
+ | :------: | ------- | ------- |
+ | Material Output | Frag Color: computation for the final color | - |
 
 ## Other libraries used
 
