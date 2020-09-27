@@ -27,20 +27,16 @@ This is the list of the nodes currently available. There are more comming soon, 
  
  | Type |  Inputs | Outputs |
  | **Input** | | |
- | :------: | ------- | ------- |
+ | :------ | ------- | ------- |
  | Number | - | Factor: value |
  | Color | - | Color: vec3 |
  | Coordinates | - | Generated: vec3<br/>Normal: vec3<br/>UV: vec3<br/>Object: vec3<br/>Camera: vec3 |
- | :------ | ------- | ------- |
  | **Texture** | | |
- | :------: | ------- | ------- |
  | Gradient | Vector: vec3 | Color: vec4 <br/>Factor |
  | Noise | Vector: vec3 | Color: vec4 <br/>Factor |
  | Dicom | - | Density: value |
  | Transfer Function | - | Color: vec4 |
- | :------ | ------- | ------- |
  | **Operator** | | |
- | :------: | ------- | ------- |
  | Math | Value A, Value B | Result (=) |
  | MixRGB | Factor <br/>Color A, Color B | Color: vec4, Factor: value |
  | ColorRamp | Value | Color: vec4, Factor: value |
@@ -49,13 +45,9 @@ This is the list of the nodes currently available. There are more comming soon, 
  | Rotate | Vector: vec3 | Vector: vec3 |
  | Separate | RGBA: vec4 | R: red value<br/>G: green value<br/>B: blue value<br/>A: aplha value |
  | Combine | R: red value<br/>G: green value<br/>B: blue value<br/>A: aplha value | RGBA: vec4 |
- | :------ | ------- | ------- |
  | **Shader** | | |
- | :------: | ------- | ------- |
  | Volume | Color: vec4<br/>Density:value | Volume: algorithm that calculates the final color |
- | :------ | ------- | ------- |
  | **Output** | | |
- | :------: | ------- | ------- |
  | Material Output | Frag Color: computation for the final color | - |
 
 ## Other libraries used
