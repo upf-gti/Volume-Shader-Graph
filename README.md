@@ -25,7 +25,7 @@ This is the list of the nodes currently available. There are more comming soon, 
  * **Shader:** Volume.
  * **Output:** Material Output.
  
- | Type |  Inputs | Outputs |
+ | Node Type |  Inputs | Outputs |
  | :------ | ------- | ------- |
  | **Input** | | |
  | Number | - | Factor: value |
@@ -39,16 +39,16 @@ This is the list of the nodes currently available. There are more comming soon, 
  | **Operator** | | |
  | Math | Value A, Value B | Result (=) |
  | MixRGB | Factor <br/>Color A, Color B | Color: vec4<br/>Factor: value |
- | ColorRamp | Value | Color: vec4, Factor: value |
+ | ColorRamp | Value | Color: vec4<br/>Factor: value |
  | Translate | Vector: vec3 | Vector: vec3 |
  | Scale | Vector: vec3 | Vector: vec3 |
  | Rotate | Vector: vec3 | Vector: vec3 |
  | Separate | RGBA: vec4 | R: red value<br/>G: green value<br/>B: blue value<br/>A: aplha value |
  | Combine | R: red value<br/>G: green value<br/>B: blue value<br/>A: aplha value | RGBA: vec4 |
  | **Shader** | | |
- | Volume | Color: vec4<br/>Density:value | Volume: algorithm that calculates the final color |
+ | Volume | Color: vec4<br/>Density:value | Volume: algorithm that calculates the final color of the pixel |
  | **Output** | | |
- | Material Output | Frag Color: computation of the final color | - |
+ | Material Output | Frag Color: code that computes the final color of the pixel | - |
 
 ## Other libraries used
 
